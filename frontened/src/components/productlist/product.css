@@ -1,0 +1,157 @@
+.main{
+    box-shadow: 1px 1px 1px #00000029;
+}
+
+
+.box1{
+    top: 0px;
+    left: 0px; 
+    width: 1345px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 48px #0000000F;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+} 
+.box11{
+    top: 30px;
+    margin-left: 119px;
+    margin-top: 18px;
+    width: 108px;
+    height: 27px;
+    
+    text-align: left;
+    font: normal normal 900 20px/27px Avenir;
+    letter-spacing: 1.8px;
+    color: #5861AE;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.box12{
+    display: flex;
+}
+.box122{
+    
+    
+    top: 0px;
+    width: 100px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 1px #00000029;
+    opacity: 1;
+    text-align: center;
+    border: 0.5px solid  #0000000F;
+   
+} 
+.box1221{
+    top: 0px;
+    width: 100px;
+    height: 50px;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 1px #00000029;
+    opacity: 1;
+
+}
+.box2{
+    height: 490px;
+    display: flex;
+    
+    
+}
+.box21{
+   
+    display: flex;
+    flex-direction: column;
+   
+    
+    left: 0px;
+    width: 57px;
+    height: 490px;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.btn{
+    background-color:#5861AE;
+
+}
+.btn2{
+    background-color: white;
+}
+
+.image1{
+    width: 23px;
+    height: 23px;
+    margin: 10px 10px 5px 10px;
+    
+}
+.image2{
+    width: 23px;
+    height: 23px;
+    margin: 10px 10px 5px 10px;
+    
+
+}
+table{
+    margin-left:25px;
+    border: 1px #e8ebee solid ;
+}
+
+.box221{
+    height: 40px;
+}
+.box221 p{
+    margin-left: 30px;
+}
+.box222 table {
+    border-collapse: collapse;
+    width: 1250px;
+  }
+  
+  
+.box222 table th{
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-weight: lighter;
+    
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+.quan{
+      width: 35px;
+  }
+  .items .check{
+      width: 40px;
+      height: 30px;
+      margin-right: 20px;
+      
+  }
+
+
+.box3{
+    top: 900px;
+    left: 0px;
+    width:1345px;
+    height: 50px;
+    background: #182838 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    text-align: center;
+}
+
+.create{
+    margin-top: 10px;
+    float:right;
+    height: 30px;
+    margin-right: 5px;
+    border-color:#5861AE;
+    color:#5861AE;
+    border-radius: 5px;
+}
