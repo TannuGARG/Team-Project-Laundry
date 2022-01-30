@@ -5,10 +5,11 @@ const Schema=mongoose.Schema;
 var productSchema = new Schema({
     producttype: { type: String, required: true },
     quantity: { type: Number, default: 0 },
-    wash:{type:Boolean, default:false},
-    iron:{type:Boolean, default:false},
-    fold:{type:Boolean, default:false},
-    pack:{type:Boolean, default:false},
+    // wash:{type:Boolean, default:false},
+    // iron:{type:Boolean, default:false},
+    // fold:{type:Boolean, default:false},
+    // pack:{type:Boolean, default:false},
+    services:[],
     price: { type: Number, default: 0 }
 })
 
@@ -20,7 +21,8 @@ var OrderSchema=new Schema({
     },
     orderTime: {
         type: Date,
-        required : true
+        required : true,
+        default:"30-1-2021"
     },
     productlist : [productSchema], 
     totalprice: {

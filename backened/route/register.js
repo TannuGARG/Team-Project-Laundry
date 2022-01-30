@@ -7,12 +7,15 @@ router.use(bodyParser.json())
 
 
 router.post("/", async (req, res) => {
+    console.log("tamanna")
     const Email = req.body.Email;
     console.log("back", Email)
     try {
-        const User1 = await UserDetail.findOne({ email: req.body.Email });
+        const User1 = await UserDetail.findOne({ Email: req.body.Email });
+        
         if (User1 && User1.Email === req.body.Email) {
-            res.send({ message: "User already Exist" })
+            console.log("exist",User1.Email)
+            res.send({ status: "User already Exist" })
         } else {
             const user = new UserDetail({
                 Name: req.body.Name,
@@ -28,8 +31,8 @@ router.post("/", async (req, res) => {
                 if (err) {
                     res.send(err)
                 } else {
-
-                    res.send({ message: "Successfully registered" })
+                    console.log(user)
+                    res.send({ status: "Successfully registered" })
                 }
             })
 

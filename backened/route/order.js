@@ -3,76 +3,46 @@ const router = express.Router();
 const OrderDetails = require('../models/order');
 const bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator');
-const {JsonWebTokenError} = require("jsonwebtoken")
-
+const { JsonWebTokenError } = require("jsonwebtoken")
+const UserDetail = require("../models/user");
 const secret = "mynameistamannafrom10xacademy"
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 const jwt = require("jsonwebtoken")
 
 router.get('/', async (req, res) => {
-    console.log(req.body.token)
-    const token = req.body.token;
-    if (!token) return res.status(401).send('Access Denied !');
-    console.log(token);
-    try 
-    {
-        
-        const decode = jwt.verify(token, secret);
-        console.log("decoded",decode)
-        const orderData = await OrderDetails.find({ user: req.body.user });
 
+
+    try {
+        const orderData = await OrderDetails.find({ user: req.user});
+        const l=orderData.length
+      
+        console.log("check--------------------------", orderData)
         res.json({
-                status: "Success",
-                data: orderData
+            status: "Success",
+            content: orderData
         })
-    } 
-    catch (error) 
-    {
+    }
+    catch (error) {
         res.status(400).send('Invalid token !');
     }
-
-// ----------------------------------
-
-
-
-
-
-    // try {
-    //     console.log("decoded", decode)
-    //     const orderData = await OrderDetails.find({ user: req.body.user });
-    //     res.json({
-    //         status: "Success",
-    //         data: orderData,
-
-    //     })
-    // } catch (err) {
-    //     console.log("invalid")
-    //     // res.json({
-    //     //     message: "access denied"
-    //     //     // status : "Failed to get orders",
-    //     //     // message : err.message
-    //     //     // res.send({message:"access denied"})
-    //     // })
-    // }
 
 
 
 })
 
+
 router.post('/',
-    body("user").isMongoId(),
-    body("orderTime").isDate(),
-    body("productlist"),
-    body("totalprice"),
-    body("totalitems"),
-    body("status"),
+
     async (req, res) => {
+        console.log("tamanna", req.body)
         try {
+
             const orderData = await OrderDetails.create({
-                user: req.body.user,
-                orderTime: req.body.orderTime,
-                productlist: req.body.productlist,
+                user: req.user,
+
+                orderTime: req.body.date,
+                productlist: req.body.services,
                 totalprice: req.body.totalprice,
                 totalitems: req.body.totalitems,
                 status: req.body.status

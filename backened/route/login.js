@@ -20,11 +20,11 @@ router.post("/", async (req, res) => {
         if (isMatch) {
             try {
 
-                const token = await jwt.sign(req.body, secret, { expiresIn: '1d' });
+                const token = jwt.sign(req.body, secret, { expiresIn: '1d' });
 
                 console.log(token)
                 res.header("authorization",token)
-                res.send({ message: "Login Successfully", jwttoken: token, user: userEmail })
+                res.send({ status: "Login Successfully", jwttoken: token, user: userEmail })
 
             } catch (err) {
                 console.log(err)
@@ -33,13 +33,13 @@ router.post("/", async (req, res) => {
 
         }
         else {
-            res.send({ message: "Incorrect Password" })
+            res.send({ status: "Incorrect Password" })
 
         }
 
 
     } else {
-        res.send({ message: "User not registered" })
+        res.send({ status: "User not registered" })
     }
 
 

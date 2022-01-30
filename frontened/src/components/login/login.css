@@ -22,7 +22,7 @@ body {
   }
   .main-panel {
     width: 50%;
-    height: 450px;
+    height: 555px;
     /* border: 1px solid black; */
     padding-top: 10px;
   }
@@ -80,4 +80,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
-  
+.dev{
+  margin-right: 335px;
+}
+.submit2{
+  height: 25px;
+  border-radius: 5px;
+  background-color: #4f74e3;
+  color: white;
+  float: left;
+
+
+
+}

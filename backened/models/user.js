@@ -21,8 +21,6 @@ userSchema = new mongoose.Schema({
 userSchema.pre("save",async function(next){
     console.log(`current password is ${this.Password}`)
     this.Password = await bcrypt.hash(this.Password,10);
-
-    
     next();
 })
 

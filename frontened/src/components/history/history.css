@@ -1,3 +1,4 @@
+
 .main{
     box-shadow: 1px 1px 1px #00000029;
 }
@@ -6,7 +7,7 @@
 .box1{
     top: 0px;
     left: 0px; 
-    width: 1350px;
+    width: 1345px;
     height: 50px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 48px #0000000F;
@@ -57,7 +58,7 @@
 
 }
 .box2{
-    /* height: 280px; */
+    height: 490px;
     display: flex;
     
     
@@ -66,9 +67,11 @@
    
     display: flex;
     flex-direction: column;
+   
+    
     left: 0px;
-    width: 57px; 
-    height: 550px;
+    width: 57px;
+    height: 490px;
     background: #5861AE 0% 0% no-repeat padding-box;
     opacity: 1;
 }
@@ -102,12 +105,11 @@ table{
     height: 40px;
 }
 .box221 p{
-    float: left;
+    margin-left: 30px;
 }
 .box222 table {
     border-collapse: collapse;
     width: 1250px;
-    height: 400px;
   }
   
   
@@ -126,25 +128,23 @@ th, td {
 .quan{
       width: 35px;
   }
-  /* .items .check{
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-     
+  .items .check{
+      width: 40px;
+      height: 30px;
+      margin-right: 20px;
       
-  } */
+  }
 
 
 .box3{
     top: 900px;
     left: 0px;
-    width:1350px;
+    width:1345px;
     height: 50px;
     background: #182838 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
     text-align: center;
-    margin-top: 30px;
 }
 
 .create{
@@ -156,41 +156,8 @@ th, td {
     color:#5861AE;
     border-radius: 5px;
 }
-.reset{
-    height: 30px;
-    border-radius: 5px;
-    background-color: #5861AE;
-}
-.cont2{
-    background-color:#5861AE;;
-    border-color: white;
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-}
+.view{
+    height: 20px;
+    width: 20px;
 
-.cont{
-    border-color: white ;
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-
-}
-.pic{
-    width: 23px;
-    height: 25px;
-    
-
-}
-.show{
-    display: flex;
-    flex-direction: row;
-}
-.new{
-    width: 40px;
-    height: 35px;
-}
-.show p{
-    margin-top: 5px;
-    margin-left: 3px;
 }
