@@ -1,0 +1,182 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  #heading{
+    top: 230px;
+    left: 152px;
+    width: 411px;
+    height: 180px;
+    text-align: left;
+    font: normal normal 900 100px/120px Avenir;
+    letter-spacing: 0px;
+    color: #5861AE;
+    text-transform: capitalize;
+    opacity: 1;
+    }
+    #heading_2{
+  top: 501px;
+  left: 151px;
+  width: 335px;
+  height: 27px;
+  text-align: left;
+  font: normal normal normal 20px/26px Avenir;
+  letter-spacing: 0.8px;
+  color: #565657;
+  text-transform: capitalize;
+  opacity: 1;
+    }
+  #heading_3{
+    margin-top: 10%;
+    margin-right: 258px;
+  
+  width: 64px;
+  height: 20px;
+  text-align: left;
+  font: normal normal bold 15px/20px Open Sans;
+  letter-spacing: 0.3px;
+  opacity: 1;
+  
+  }
+  #left-side-panel1{
+    background-color: #B9C0FD1A;
+    width: 1700px;
+    height: 570px;
+  }
+  #register_btn{
+  
+  left: 195px;
+  width: 64px;
+  height: 20px;
+  text-align: center;
+  font: normal normal bold 15px/20px Open Sans;
+  letter-spacing: 0.3px;
+  color: #4552C1;
+  opacity: 1;
+  }
+  #Box-1{
+  
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #4552C1;
+  border-radius: 4px;
+  opacity: 1;
+  }
+  #right-panel-contents{
+    margin-left: 152px;
+    margin-top: 100px;
+  }
+  #sing{
+    font: Avenir medium;
+    top: 81px;
+  
+  opacity: 1;
+  color: #4552C1;
+  
+  }
+  #reg{
+    font: Avenir medium;
+    margin-top: 150px;
+    margin-left: 0px;
+  
+  opacity: 1;
+  color: #4552C1;
+  }
+  #left-side-panel{
+    left: 730px;
+  width: 710px;
+  background: #B9C0FD1A 0% 0% no-repeat padding-box;
+  }
+  #signin_box{
+    align-items: center;
+    margin-top: 25%;
+  }
+  div #Register_box input{
+    /* align-items: left; */
+    margin-left: 20px;
+    /* margin-top: 25%; */
+    /* margin:50px; */
+  
+   
+  }
+  #reg_box{
+    padding: 20px;
+    padding-left: 20px;
+  }
+  .foot-note{
+      margin-top: 100px;
+  }
+  table,th, tr, td{
+      border:none;
+     }
+  .colr{
+      background-color:#B9C0FD1A;
+      margin-top: 120px;
+      
+    }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .dev{
+    margin-right: 230px;
+  }
+  .submit2{
+    height: 25px;
+    border-radius: 5px;
+    background-color: #4f74e3;
+    color: white;
+    float: left;
+  
+  
+  
+  }
+  .take{
+    height: 25px;
+    border: 1px solid #4f74e3;
+    border-radius: 5px;
+  }
+  
+.submit3{
+  
+  height: 25px;
+  border-radius: 5px;
+  background-color: #4f74e3;
+  color: white;
+    
+}
+.red{
+  color: red;
+}
